@@ -1,0 +1,32 @@
+.hero {
+
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    &__inner {
+        position: relative;
+        min-height: calc(100vh - 140px);
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 35%;
+        right: 0;
+        max-width: 657px;
+        width: 100%;
+        color: white;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+
+    &__box {
+        position: absolute;
+        bottom: 10%;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
