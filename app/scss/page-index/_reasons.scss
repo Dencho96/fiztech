@@ -1,0 +1,35 @@
+.reasons {
+    padding: 100px 0 115px;
+    background-color: #f9f9f9;
+
+    &__title{
+        margin-bottom: 48px;
+    }
+
+    &__inner{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    &__item {
+        margin-bottom: 35px;
+        padding: 60px 30px 45px;
+        width: 261px;
+        height: 243px;
+        background-color: white;
+    }
+
+    &__pic{
+        margin-bottom: 18px;
+        height: 65px;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__name{
+        font-weight: 700;
+    }
+}
