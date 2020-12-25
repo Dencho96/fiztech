@@ -1,0 +1,193 @@
+.footer {
+    padding: 70px 0 93px;
+    background-image: url('../images/section-bg.jpg');
+
+    &__container {
+        max-width: 944px;
+        padding: 0 30px;
+    }
+
+    &__title,
+    &__text {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 21px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin-bottom: 94px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__form {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__label,
+    &__input {
+        max-width: 340px;
+        width: 100%;
+    }
+
+    &__label {
+        margin-top: 15px;
+        font-size: 14px;
+
+        &--textarea {
+            max-width: 100%;
+        }
+
+        &--upload {
+            position: relative;
+            margin-top: 35px;
+            padding-left: 42px;
+            cursor: pointer;
+            font-size: 16px;
+            color: $red;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: -2px;
+                left: 0;
+                width: 23px;
+                height: 22px;
+                background-image: url('../images/icon-upload.png');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        &--checkbox {
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 0 50px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+
+    &__label-text {
+        opacity: 0.5;
+    }
+
+    &__input,
+    &__textarea {
+        margin-top: 15px;
+        padding: 25px 15px 25px 70px;
+        width: 100%;
+        height: 74px;
+        border: none;
+        background-color: white;
+    }
+
+    &__input-wrapper {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: 23px;
+            width: 23px;
+            height: 23px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &--name {
+            &::before {
+                background-image: url('../images/icon-name.png');
+            }
+        }
+
+        &--phone {
+            &::before {
+                background-image: url('../images/icon-phone.png');
+            }
+        }
+
+        &--email {
+            &::before {
+                background-image: url('../images/icon-email.png');
+            }
+        }
+
+        &--textarea {
+            &::before {
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url('../images/icon-msg.png');
+            }
+        }
+    }
+
+    &__input {
+        &--upload {
+            max-width: 180px;
+            width: 100%;
+            background-color: transparent;
+            position: absolute;
+            padding-left: 31px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+        }
+    }
+
+    &__textarea {
+        display: block;
+        margin-bottom: 33px;
+        resize: none;
+    }
+
+    &__btn {
+        margin: 0 auto 15px;
+    }
+
+    &__checkbox {
+        position: absolute;
+        padding-left: 31px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+
+        &:checked+.footer__checkbox-style::before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: 1px;
+            width: 16px;
+            height: 11px;
+            background-image: url('../images/checked.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &__checkbox-style {
+        position: absolute;
+        margin-left: -31px;
+        width: 16px;
+        height: 16px;
+        border: 2px solid black;
+    }
+}
