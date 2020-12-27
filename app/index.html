@@ -17,50 +17,57 @@
                 <a class="logo" href="#">
                     <img class="logo__img" src="images/logo.png" alt="Физтех">
                 </a>
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a href="#" class="header__link">
-                                О компании
-                            </a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">
-                                Продукция
-                            </a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">
-                                Доставка
-                            </a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">
-                                Документы
-                            </a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__lang">
-                    <div class="header__text header__text--choose">
-                        Выбрать язык:
-                    </div>
-                    <div class="header__wrapper d-flex">
-                        <button class="header__wrapper-item header__btn"
-                            style="background-image: url('images/lang-kz.png');"></button>
-                        <button class="header__wrapper-item header__btn active"
-                            style="background-image: url('images/lang-ru.png');"></button>
-                        <div class="header__wrapper-item header__text header__text--site">
-                            Основной сайт
+                <div class="header__box d-flex">
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    Продукция
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    Доставка
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    Документы
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang">
+                        <div class="header__text header__text--choose">
+                            Выбрать язык:
+                        </div>
+                        <div class="header__wrapper d-flex">
+                            <button class="header__wrapper-item header__btn"
+                                style="background-image: url('images/lang-kz.png');"></button>
+                            <button class="header__wrapper-item header__btn active"
+                                style="background-image: url('images/lang-ru.png');"></button>
+                            <div class="header__wrapper-item header__text header__text--site">
+                                Основной сайт
+                            </div>
                         </div>
                     </div>
-
                 </div>
+                <button class="hamburger hamburger--elastic header__menu" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner header__menu-inner"></span>
+                    </span>
+                </button>
+
             </div>
         </div>
     </header>
@@ -481,35 +488,35 @@
 
                 <label class="footer__label">
                     <span class="footer__label-text">* Ваше имя:</span>
-                    <div class="footer__input-wrapper footer__input-wrapper--name">
+                    <span class="footer__input-wrapper footer__input-wrapper--name">
                         <input class="footer__input" type="text" required>
-                    </div>
+                    </span>
                 </label>
 
                 <label class="footer__label">
                     <span class="footer__label-text">* Номер телефона:</span>
-                    <div class="footer__input-wrapper footer__input-wrapper--phone">
+                    <span class="footer__input-wrapper footer__input-wrapper--phone">
                         <input class="footer__input" type="tel" required>
-                    </div>
+                    </span>
                 </label>
 
                 <label class="footer__label">
                     <span class="footer__label-text">* Ваш email:</span>
-                    <div class="footer__input-wrapper footer__input-wrapper--email">
+                    <span class="footer__input-wrapper footer__input-wrapper--email">
                         <input class="footer__input" type="email" required>
-                    </div>
+                    </span>
                 </label>
 
                 <label class="footer__label footer__label--upload">
                     <input class="footer__input footer__input--upload" type="file">
                     Прикрепить файл
                 </label>
-                
+
                 <label class="footer__label footer__label--textarea">
                     <span class="footer__label-text">Ваше сообщение:</span>
-                    <div class="footer__input-wrapper footer__input-wrapper--textarea">
+                    <span class="footer__input-wrapper footer__input-wrapper--textarea">
                         <textarea class="footer__textarea"></textarea>
-                    </div>
+                    </span>
                 </label>
 
                 <button class="btn footer__btn" type="submit">

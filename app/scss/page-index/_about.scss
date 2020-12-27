@@ -2,22 +2,63 @@
     padding: 125px 0 125px;
     background-image: url('../images/about-bg.jpg');
 
+    @include max1200 {
+        padding: 80px 0;
+    }
+
+    @include max992 {
+        padding: 70px 0;
+    }
+
+    @include max768 {
+        padding: 50px 0;
+    }
+
+    @include max576 {
+        padding: 35px 0;
+    }
+
     &__title {
         margin-bottom: 115px;
+
+        @include max992 {
+            margin-bottom: 60px;
+        }
+
+        @include max768 {
+            margin-bottom: 50px;
+        }
+
+        @include max576 {
+            margin-bottom: 30px;
+        }
     }
 
     &__inner {
         justify-content: space-between;
+
+        @include max992 {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__box {
         max-width: 410px;
         width: 100%;
+
+        @include max992 {
+            margin-bottom: 45px;
+        }
     }
 
     &__text {
         &+& {
             margin-top: 45px;
+
+            @include max992 {
+                margin-top: 25px;
+            }
         }
     }
 
@@ -30,6 +71,9 @@
     &__advantages-title {
         margin-bottom: 28px;
         font-weight: 700;
+        @include max992{
+            text-align: center;
+        }
     }
 
     &__item {
@@ -40,7 +84,7 @@
             margin-top: 18px;
         }
 
-        &::before{
+        &::before {
             content: "";
             position: absolute;
             top: 0;

@@ -5,9 +5,16 @@
     background-repeat: no-repeat;
     background-position: bottom center;
 
+    @include max992{
+        background-position: 35% center;
+    }
+
     &__inner {
         position: relative;
         min-height: calc(100vh - 140px);
+        @include max768{
+            min-height: calc(100vh - 100px);
+        }
     }
 
     &__text {
@@ -21,6 +28,29 @@
         font-weight: 700;
         line-height: 60px;
         text-transform: uppercase;
+        @include max1200{
+            max-width: 570px;
+            font-size: 40px;
+            line-height: 52px;
+        }
+        @include max992{
+            bottom: 55%;
+            max-width: 400px;
+            font-size: 28px;
+            line-height: 32px;
+        }
+        @include max768{
+            max-width: 340px;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: right;
+        }
+        @include max576{
+            top: 25px;
+            max-width: 270px;
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 
     &__box {
@@ -28,5 +58,26 @@
         bottom: 10%;
         justify-content: space-between;
         width: 100%;
+        @include max992{
+            left: 50%;
+            bottom: 7%;
+            transform: translateX(-50%);
+            width: auto;
+            flex-direction: column;
+        }
+        @include max576{
+            bottom: 17%;
+        }
+    }
+
+    &__btn{
+        max-width: 300px;
+        
+        @include max992{
+            padding: 15px 10px;
+            &+&{
+                margin-top: 15px;
+            }
+        }
     }
 }

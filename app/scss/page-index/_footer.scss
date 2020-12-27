@@ -22,6 +22,12 @@
         margin-bottom: 94px;
         font-size: 24px;
         line-height: 28px;
+        @include max992{
+            margin-bottom: 60px;
+        }
+        @include max768{
+            margin-bottom: 48px;
+        }
     }
 
     &__form {
@@ -31,12 +37,20 @@
         max-width: 720px;
         width: 100%;
         margin: 0 auto;
+
+        @include max768 {
+            flex-direction: column;
+        }
     }
 
     &__label,
     &__input {
         max-width: 340px;
         width: 100%;
+
+        @include max768{
+            max-width: 100%;
+        }
     }
 
     &__label {
@@ -45,6 +59,9 @@
 
         &--textarea {
             max-width: 100%;
+            @include max768{
+                margin-top: 30px;
+            }
         }
 
         &--upload {
@@ -60,7 +77,7 @@
                 text-decoration: none;
             }
 
-            &::before{
+            &::before {
                 content: "";
                 position: absolute;
                 top: -2px;
@@ -97,6 +114,7 @@
     }
 
     &__input-wrapper {
+        display: block;
         position: relative;
 
         &::before {

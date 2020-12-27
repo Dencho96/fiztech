@@ -2,13 +2,36 @@
     padding: 112px 0 140px;
     background-image: url('../images/red-bg.jpg');
 
+    @include max1200 {
+        padding: 90px 0 110px;
+    }
+
+    @include max992 {
+        padding: 60px 0 80px;
+    }
+
+    @include max768 {
+        padding: 50px 0 70px;
+    }
+
+    @include max576 {
+        padding: 35px 0 55px;
+    }
+
     &__title {
         margin-bottom: 60px;
         color: white;
+        @include max768{
+            margin-bottom: 48px;
+        }
     }
 
     &__inner {
         justify-content: space-between;
+        @include max768{
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__box {
@@ -16,6 +39,14 @@
         width: 100%;
         padding: 56px 50px;
         background-color: white;
+        @include max992{
+            padding: 30px 20px;
+        }
+        @include max768{
+            &+&{
+                margin-top: 25px;
+            }
+        }
     }
 
     &__pic {

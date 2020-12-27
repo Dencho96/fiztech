@@ -1,12 +1,42 @@
 .production {
     padding-top: 120px;
 
-    &__title {
-        margin-bottom: 63px;
+    @include max1200 {
+        padding-top: 90px;
     }
 
-    &__type{
+    @include max992 {
+        padding-top: 60px;
+    }
+
+    @include max768 {
+        padding-top: 50px;
+    }
+
+    @include max576 {
+        padding-top: 35px;
+    }
+
+    &__title {
+        margin-bottom: 63px;
+
+        @include max992 {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__type {
         margin-bottom: 30px;
+
+        @include max992 {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @include max768 {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__type-item {
@@ -21,7 +51,7 @@
             border-left: none;
         }
 
-        &::before{
+        &::before {
             content: "";
             position: absolute;
             top: 7px;
@@ -29,6 +59,20 @@
             width: calc(100% - 12px);
             height: calc(100% - 14px);
             border: 1px solid #ef473f;
+        }
+
+        @include max992 {
+            padding-top: 30px;
+            max-width: 45%;
+            margin-bottom: 20px;
+
+            &+& {
+                border: 1px solid #d4dbdf;
+            }
+        }
+
+        @include max768 {
+            max-width: 90%;
         }
     }
 
@@ -39,39 +83,77 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+
+        @include max992 {
+            margin-bottom: 30px;
+        }
+
+        @include max768 {
+            margin-bottom: 10px;
+        }
     }
 
-    &__name{
+    &__name {
         margin: 0 auto 38px;
         max-width: 155px;
         width: 100%;
         font-weight: 700;
     }
 
-    &__inner{
+    &__inner {
         justify-content: space-between;
         margin-bottom: 100px;
+
+        @include max1200 {
+            flex-wrap: wrap;
+        }
+
+        @include max768 {
+            justify-content: center;
+        }
     }
 
-    &__item{
+    &__item {
         padding: 37px 24px 26px;
         max-width: 190px;
         width: 100%;
         border: 1px solid #d4dbdf;
         text-align: center;
-        &+&{
+
+        &+& {
             border-left: none;
+
+            @include max1200 {
+                border: 1px solid #d4dbdf;
+            }
+        }
+
+        @include max1200 {
+            margin-bottom: 20px;
+            max-width: 30%;
+        }
+
+        @include max992 {
+            padding: 15px;
+        }
+
+        @include max768 {
+            max-width: 90%;
         }
     }
 
-    &__descr{
+    &__descr {
         height: 48px;
         margin-bottom: 17px;
         font-size: 14px;
         line-height: 16px;
+
+        @include max992{
+            font-size: 16px;
+        }
     }
 
-    &__link{
+    &__link {
         padding: 16px 15px 17px;
         min-width: 0;
         max-width: 144px;
